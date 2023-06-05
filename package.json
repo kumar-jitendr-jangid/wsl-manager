@@ -1,0 +1,51 @@
+{
+  "name": "wsl-manager",
+  "version": "1.0.0",
+  "description": "This app will be used to manage WSL linux distribution on winodws 10 or higer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "install-app-deps",
+    "start-force": "npm install && electron ./app",
+    "pack": "build --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumar-jitendr-jangid/wsl-manager.git"
+  },
+  "keywords": [
+    "wsl",
+    "wsl-manager",
+    "wsl",
+    "backup",
+    "wsl",
+    "linux",
+    "manager"
+  ],
+  "author": "jitendra kumar jangid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumar-jitendr-jangid/wsl-manager/issues"
+  },
+  "homepage": "https://github.com/kumar-jitendr-jangid/wsl-manager#readme",
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "node-cmd": "^5.0.0",
+    "path": "^0.12.7",
+    "powershell": "^2.3.2"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "electron": "^24.2.0",
+    "electron-builder": "^23.6.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "build": {
+    "appId": "pnsj-wsl-001",
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  }
+}

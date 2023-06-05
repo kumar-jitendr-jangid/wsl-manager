@@ -1,0 +1,20 @@
+.container {
+    border-radius: 1.25rem !important
+}
+
+a {
+    text-decoration: none;
+}
+
+#pick-folder {
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.progress {
+    margin: 10px;
+}
+
+tr {
+    color: antiquewhite;
+}
